@@ -96,9 +96,18 @@ The following features work flawlessly after installation:
 
 ## 🖱️ Post-Installation Step
 
+### 1. Adjusting Trackpad Settings
 After macOS is installed, you’ll need to adjust the trackpad settings. By default, macOS registers all clicks as force clicks. Here’s how to fix it:  
 1. Go to **System Settings → Trackpad**.  
 2. Uncheck the box for **"Force Click and haptic feedback"**.
+
+### 2. Moving OpenCore from USB to macOS Drive
+Once macOS is installed and running smoothly, you can move OpenCore from your USB to the macOS drive to make the system bootable without needing the USB. Follow these steps:  
+1. Mount the EFI partition of your macOS drive using tools like **MountEFI** or **OpenCore Configurator**.
+2. Copy the EFI folder from your USB to the mounted EFI partition on the macOS drive.
+3. Reboot your system and select the macOS drive in your BIOS boot menu as the primary boot option.  
+4. For detailed guidance, refer to the Dortania guide:  
+   [Moving OpenCore to macOS Drive](https://dortania.github.io/OpenCore-Post-Install/universal/oc2hdd.html).
 
 ---
 
